@@ -1,6 +1,0 @@
-name = "nperson"
-context = "prod"
-
-domain nperson.de {
-	www = "drop"
-}
