@@ -1,0 +1,97 @@
+/*
+-------------------------------------------------------------- */
+body {
+  /* Make sure all fonts display in all its glory, enabling ligatures and kerning. */
+  text-rendering: optimizeLegibility;
+  color: #111;
+  background: #fff;
+  line-height: 1.35;
+  padding: 1em 20px;
+}
+
+header { margin-bottom: 1em; }
+
+body > .content {
+  float: left;
+  width: 650px;
+
+  /* Enable hyphenation for _justified_ text. */
+  hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+/* Misc styling of (inline) elements
+-------------------------------------------------------------- */
+p               { margin-bottom: .5em; }
+em              { font-style: italic; }
+strong          { font-weight: bold; }
+
+/* Code and literal values in text
+-------------------------------------------------------------- */
+pre > code         { display: block; }
+code, pre, .fixed  { font: 12px Monaco, Courier, monospace; }
+code               { padding: .2em .25em; border: 1px solid #f0f0f0; background: #fafafa; }
+pre                { padding-bottom: 1em; }
+
+/* Lists
+-------------------------------------------------------------- */
+ol,ul {
+  margin-left: 1.5em;
+  margin-bottom: .5em;
+}
+li {
+	margin-bottom: .25em;
+}
+
+/* Headings
+-------------------------------------------------------------- */
+header.site h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+section > h1, article > h1 {
+  font-size: 1.2em;
+  line-height: 2.5;
+  text-transform: uppercase;
+}
+
+h1 .et-al {
+  text-transform: none;
+}
+
+img.profile {
+  margin-top: 1.5em;
+}
+
+/* Misc
+-------------------------------------------------------------- */
+hr {
+  height: 1px;
+  color: blue;
+}
+.closing {
+  float: left;
+  clear: both;
+  width: 100%;
+  margin: 5em auto 5em 0;
+  border-top: 1px dashed blue;
+}
+
+.content section {
+  margin-bottom: 2em;
+}
+
+.content section + section {
+  border-top: 1px solid blue;
+  padding-top: 1.5em;
+}
+
+.about {
+  max-width: 500px;
+}
+
+.commercial .secondary {
+  display: none;
+}
