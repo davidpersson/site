@@ -13,7 +13,7 @@ header { margin-bottom: 1em; }
 
 body > .content {
   float: left;
-  width: 650px;
+  max-width: 700px;
 
   /* Enable hyphenation for _justified_ text. */
   hyphens: auto;
