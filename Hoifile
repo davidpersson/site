@@ -1,0 +1,10 @@
+name = "mariuswilms"
+context = "dev"
+webroot = "."
+
+domain "mariuswilms.test" {
+	www = "drop"
+	redirects = [
+		"nperson.test"
+	]
+}
