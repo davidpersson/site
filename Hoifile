@@ -1,10 +1,14 @@
 name = "mariuswilms.com"
-context = "dev"
-webroot = "public"
+context = "prod"
+webroot = "."
 
-domain "mariuswilms.test" {
+domain "mariuswilms.com" {
 	www = "drop"
 	redirects = [
-		"nperson.test"
+		"nperson.de"
 	]
+	SSL = {
+		certificate = "!system"
+		certificateKey = "!system"
+	}
 }
