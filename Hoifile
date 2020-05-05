@@ -1,6 +1,6 @@
 name = "mariuswilms.com"
 context = "dev"
-webroot = "."
+webroot = "public"
 
 domain "mariuswilms.test" {
 	www = "drop"
