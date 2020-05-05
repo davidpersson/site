@@ -1,97 +1,72 @@
-/*
--------------------------------------------------------------- */
 body {
-  /* Make sure all fonts display in all its glory, enabling ligatures and kerning. */
   text-rendering: optimizeLegibility;
+
+  /* Whatever font that actually is, it will work for me. */
+  font-family: serif;
+
+  /* Increase line-height from the default. */
+  line-height: 1.35;
+
   color: #111;
   background: #fff;
-  line-height: 1.35;
-  padding: 1em 20px;
+
+  padding: 20px;
+  margin: 0;
+
+  /* Don't have content run too wide, because of the lines,
+     that would look very line-y... */
+  max-width: 740px;
 }
 
-header { margin-bottom: 1em; }
-
-body > .content {
-  float: left;
-  max-width: 700px;
-
-  /* Enable hyphenation for _justified_ text. */
+p {
+  /* Reduced width (but not for list content, as that are "just"
+     facts) for better readibility of flowed lenghty text. */
+  max-width: 600px;
   hyphens: auto;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
 }
 
-/* Misc styling of (inline) elements
--------------------------------------------------------------- */
-p               { margin-bottom: .5em; }
-em              { font-style: italic; }
-strong          { font-weight: bold; }
-
-/* Code and literal values in text
--------------------------------------------------------------- */
-pre > code         { display: block; }
-code, pre, .fixed  { font: 12px Monaco, Courier, monospace; }
-code               { padding: .2em .25em; border: 1px solid #f0f0f0; background: #fafafa; }
-pre                { padding-bottom: 1em; }
-
-/* Lists
--------------------------------------------------------------- */
-ol,ul {
-  margin-left: 1.5em;
-  margin-bottom: .5em;
+/* The default styles, push lists way too
+   wide into the content. */
+ul {
+  padding-left: 30px;
 }
 li {
-	margin-bottom: .25em;
+  margin-bottom: .25em;
 }
 
-/* Headings
--------------------------------------------------------------- */
-header.site h1 {
-  font-size: 2em;
+/* Don't put too much emphasis on headings, we use them often. */
+h1 {
   text-transform: uppercase;
-  margin-bottom: 1em;
-}
-section > h1, article > h1 {
-  font-size: 1.2em;
-  line-height: 2.5;
-  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 20px;
 }
 
-h1 .et-al {
-  text-transform: none;
+
+body > header {
+  margin-bottom: 10px;
 }
 
-img.profile {
-  margin-top: 1.5em;
+/* This is a special heading. */
+body > header h1 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 32px;
 }
 
-/* Misc
--------------------------------------------------------------- */
-hr {
-  height: 1px;
-  color: blue;
+section > h1 {
+  /* The sections already come with their own top spacing. */
+  margin-top: 0;
 }
-.closing {
-  float: left;
-  clear: both;
-  width: 100%;
-  margin: 5em auto 5em 0;
-  border-top: 1px dashed blue;
+section {
+  /* Have the line between sections in equal distances from the content. */
+  margin-bottom: 40px;
 }
-
-.content section {
-  margin-bottom: 2em;
-}
-
-.content section + section {
+section + section {
   border-top: 1px solid blue;
-  padding-top: 1.5em;
+  padding: 30px 40px 0 0;
 }
 
-.about {
-  max-width: 540px;
-}
-
-.commercial .secondary {
-  display: none;
+body > footer {
+  padding-top: 60px;
+  border-top: 1px dashed blue;
 }
