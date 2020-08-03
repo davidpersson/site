@@ -40,7 +40,10 @@ h1 {
   font-weight: normal;
   font-size: 20px;
 }
-
+h2 {
+  font-weight: normal;
+  font-size: 20px;
+}
 
 body > header {
   margin-bottom: 10px;
